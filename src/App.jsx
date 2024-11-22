@@ -1,14 +1,16 @@
-import Hello from "./components/Hello";
-import makersLogo from "./assets/Makers-Logo.png";
 import "./App.css";
+import React from "react";
+import Gig from "./components/Gig.jsx";
+import "./components/Gig.css";
 
 function App() {
   return (
     <>
-      <Hello name="World" />
-      <img className="logo" src={makersLogo}></img>
+      <div>
+        <Gig />
+      </div>
     </>
   );
-}
+};
 
 export default App;
