@@ -12,14 +12,14 @@
 import React from "react";
 import "./Gig.css";
 
-const Gig = () => {
+const Gig = (props) => {
     return (
         <div className="gig-container">
-            <h3 className="bandname">Bastille</h3>
-            <img className="bandimage" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmotivatetalent.com%2Ftalents%2Fbastille%2F&psig=AOvVaw0kbJiHXvbqgLbNZOu1AF91&ust=1732380026816000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNC6otKw8IkDFQAAAAAdAAAAABAE"></img>
-            <p className="description">A sunny festival in a theme park!</p>
-            <p className="datetime">12pm on 29/02/2020</p>
-            <p className="location">Dreamland, Margate</p>
+            <h3 className="bandname">{props.bandname}</h3>
+            <img className="bandimage" src={props.imgsrc} style={{ width: '350px', height: '200px'}}></img>
+            <p className="description">{props.description}</p>
+            <p className="datetime">{props.datetime}</p>
+            <p className="location">{props.location}</p>
         </div>
     );
 };
