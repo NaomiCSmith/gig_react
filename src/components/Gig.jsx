@@ -17,9 +17,9 @@ const Gig = (props) => {
         <div className="gig-container">
             <h3 className="bandname">{props.bandname}</h3>
             <img className="bandimage" src={props.imgsrc} style={{ width: '350px', height: '200px'}}></img>
-            <p className="description">{props.description}</p>
-            <p className="datetime">{props.datetime}</p>
-            <p className="location">{props.location}</p>
+            <p role="decription" className="description">{props.description}</p>
+            <p role="datetime" className="datetime">{props.datetime}</p>
+            <p role="location" className="location">{props.location}</p>
         </div>
     );
 };
